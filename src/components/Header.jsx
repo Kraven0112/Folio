@@ -7,7 +7,7 @@ export default function Header() {
   const [isVisible,setVisibility] = useState(false)
   return (
     <header
-      className={`backdrop-blur tracking-widest md:sticky top-0 px-3  ${
+      className={` backdrop-blur-2xl tracking-widest md:sticky top-0 px-3  ${
         isDark ? " bg-slate-800 text-white" : "border shadow-md"
       }`}
     >
@@ -24,7 +24,7 @@ export default function Header() {
         <nav className="space-x-20 text-xl font-bold lg:block hidden">
           <Link to={"/"}>Home</Link>
           <Link to={"/contact"}>Contact</Link>
-          <Link to={"/"}>Project</Link>
+          <Link to={"/project"}>Project</Link>
           <Link to={"/"}>Blogs</Link>
         </nav>
         <div className="flex">
@@ -52,7 +52,7 @@ export default function Header() {
         <h1 onClick={()=>{setVisibility(!isVisible)}}><i className="fa fa-window-close"></i></h1>
         <Link to={"/"}>Home</Link>
         <Link to={"/contact"}>Contact</Link>
-        <Link to={"/"}>Project</Link>
+        <Link to={"/project"}>Project</Link>
         <Link to={"/"}>Blogs</Link>
       </div>
     </header>

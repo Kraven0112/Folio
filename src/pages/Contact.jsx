@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <main
       className={`min-h-[89.5vh] p-4 tracking-widest ${
-        isDark ? "bg-slate-900 text-white" : ""
+        isDark ? "bg-slate-950 text-white" : ""
       }`}
     >
       <div className="max-w-[1250px] mx-auto py-4 px-2">

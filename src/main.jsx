@@ -4,6 +4,7 @@ import App from "./App"
 import Homepage from "./pages/Homepage"
 import Contact from "./pages/Contact"
 import AllInfo from "./pages/AllInfo"
+import Projects from "./pages/Projects"
 import './index.css'
 import './App.css'
 
@@ -23,6 +24,10 @@ const route  = createBrowserRouter([
             {
                 path:"/information",
                 element:<AllInfo/>
+            },
+            {
+                path:"/project",
+                element:<Projects/>
             }
         ]
     }
