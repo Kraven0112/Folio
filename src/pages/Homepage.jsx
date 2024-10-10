@@ -50,7 +50,7 @@ export default function Homepage() {
         </p>
       </div>
       <div className="mt-8 text-center">
-        <Link to={"/contact"} className={`text-4xl ${isDark?"text-cyan-600":"text-purple-900"}`}>Explore more <i className="fa-solid fa-arrow-right"></i></Link>
+        <Link to={"/contact"} className={`text-2xl sm:text-4xl ${isDark?"text-cyan-600":"text-purple-900"}`}>Explore more <i className="fa-solid fa-arrow-right"></i></Link>
       </div>
     </main>
   )

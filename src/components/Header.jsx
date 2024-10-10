@@ -38,7 +38,7 @@ export default function Header() {
             }}
           >
             <i
-              className={`fa-solid fa-sun text-2xl md:block hidden rounding md:mr-5`}
+              className={`fa-solid fa-sun text-2xl mr-4 rounding md:mr-5`}
             ></i>
           </p>
           <button onClick={()=>{
@@ -48,8 +48,8 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <div className={`${isVisible?"fixed bg-slate-300 w-[98%] flex items-center min-h-[300px] justify-between p-2 flex-col space-y-5 transition-all text-2xl font-bold":"hidden"} lg:hidden`}>
-        <h1 onClick={()=>{setVisibility(!isVisible)}}>X</h1>
+      <div className={` ${isDark?"bg-slate-900":""} ${isVisible?`fixed  w-[100%] left-0 sm:w-[100%] flex items-center min-h-[300px] justify-between p-2 flex-col space-y-5 transition-all text-2xl font-bold`:"hidden"} lg:hidden`}>
+        <h1 onClick={()=>{setVisibility(!isVisible)}}><i className="fa fa-window-close"></i></h1>
         <Link to={"/"}>Home</Link>
         <Link to={"/contact"}>Contact</Link>
         <Link to={"/"}>Project</Link>
