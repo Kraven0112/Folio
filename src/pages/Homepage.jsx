@@ -49,8 +49,24 @@ export default function Homepage() {
           business owner to spread their business through online.
         </p>
       </div>
+
+      <div className={`mt-5 max-1200px mx-auto flex items-center justify-center sm:hidden`}>
+        <div
+          className={`w-[200px] h-[200px] rounded-full flex items-center justify-center ${isDark?" shadow-white  shadow-2xl":"shadow-2xl shadow-green-700"}`}
+        >
+          <h1 className={`${isDark?"text-yellow-400":"text-purple-700"}`}>Thankyou for visiting !</h1>
+        </div>
+      </div>
+
       <div className="mt-8 text-center">
-        <Link to={"/contact"} className={`text-2xl sm:text-4xl ${isDark?"text-cyan-600":"text-purple-900"}`}>Explore more <i className="fa-solid fa-arrow-right"></i></Link>
+        <Link
+          to={"/contact"}
+          className={`text-2xl sm:text-4xl ${
+            isDark ? "text-cyan-600" : "text-purple-900"
+          }`}
+        >
+          Explore more <i className="fa-solid fa-arrow-right"></i>
+        </Link>
       </div>
     </main>
   )

@@ -7,12 +7,12 @@ export default function Contact() {
   return (
     <main
       className={`min-h-[89.5vh] p-4 tracking-widest ${
-        isDark ? "bg-slate-950 text-white" : ""
+        isDark ? "bg-slate-900 text-white" : ""
       }`}
     >
       <div className="max-w-[1250px] mx-auto py-4 px-2">
         <button
-          className={`text-2xl sm:border w-24 shadow-lg ${isDark?"bg-slate-900":""}`}
+          className={`text-2xl  w-24  ${isDark?"":" sm:border shadow-lg"}`}
           onClick={() => {
             history.back()
           }}
@@ -30,7 +30,7 @@ export default function Contact() {
       </h1>
 
       <div className="sm:mt-5">
-        <h1 className="text-xl text-center sm:text-4xl">Feel free to contact me! if you need help doing any projects. </h1>
+        <h1 className="text-lg text-center sm:text-4xl">Feel free to contact me! if you need help to do any projects. </h1>
       </div>
 
       <section className="max-w-[1300px] mt-3 sm:mx-auto sm:p-1 gap-3 sm:grid sm:grid-cols-2 ">
