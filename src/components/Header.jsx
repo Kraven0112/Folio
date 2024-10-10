@@ -4,7 +4,7 @@ import { ThemeContext } from "../contexts/ThemeContext"
 
 export default function Header() {
   const [isDark, setDark] = useContext(ThemeContext)
-  const [isVisible,setVisibility] = useState(JSON.parse(localStorage.getItem("menu")))
+  const [isVisible,setVisibility] = useState(false)
   return (
     <header
       className={`backdrop-blur tracking-widest md:sticky top-0 px-3 ${
@@ -43,13 +43,13 @@ export default function Header() {
           </p>
           <button onClick={()=>{
             setVisibility(!isVisible)
-            localStorage.setItem("menu",isVisible)
           }} className={` text-2xl lg:hidden block`}>
             <i className="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
-      <div className={`${!isVisible?" sticky flex items-center min-h-[300px] justify-between p-1 flex-col space-y-5 transition-all text-2xl":"hidden"}`}>
+      <div className={`${isVisible?"sticky flex items-center min-h-[300px] justify-between p-2 flex-col space-y-5 transition-all text-2xl font-bold":"hidden"}`}>
+        <h1 onClick={()=>{setVisibility(!isVisible)}}>X</h1>
         <Link to={"/"}>Home</Link>
         <Link to={"/contact"}>Contact</Link>
         <Link to={"/"}>Project</Link>
