@@ -6,7 +6,7 @@ export default function Homepage() {
   const [isDark] = useContext(ThemeContext)
   return (
     <main
-      className={`min-h-[89.5vh] sm:flex flex-col items-center justify-center ${
+      className={`min-h-[100vh] sm:min-h-[89.5vh] sm:flex flex-col items-center justify-center ${
         isDark
           ? "bg-[url('https://static.simpledesktops.com/uploads/desktops/2017/06/02/bg-wallpaper.png.943x630_q100.png')] text-white"
           : ""
