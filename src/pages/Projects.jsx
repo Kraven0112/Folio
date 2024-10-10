@@ -15,7 +15,7 @@ export default function Projects() {
       </div>
 
       <Link
-        to={""}
+        to={"/counter"}
         className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-10 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
       >
         <div>
@@ -31,7 +31,7 @@ export default function Projects() {
       </Link>
 
       <Link
-        to={""}
+        to={"/stopwatch"}
         className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
       >
         <div>

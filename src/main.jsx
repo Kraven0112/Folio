@@ -5,6 +5,9 @@ import Homepage from "./pages/Homepage"
 import Contact from "./pages/Contact"
 import AllInfo from "./pages/AllInfo"
 import Projects from "./pages/Projects"
+import Counter from "./projects/Counter"
+import Stopwatch from "./projects/Stopwatch"
+import Error from "./error/Error"
 import './index.css'
 import './App.css'
 
@@ -12,6 +15,7 @@ const route  = createBrowserRouter([
     {
         path:"/",
         element:<App/>,
+        errorElement:<Error/>,
         children:[
             {
                 path:"/",
@@ -28,6 +32,14 @@ const route  = createBrowserRouter([
             {
                 path:"/project",
                 element:<Projects/>
+            },
+            {
+                path:"/counter",
+                element:<Counter/>
+            },
+            {
+                path:"/stopwatch",
+                element:<Stopwatch/>
             }
         ]
     }
