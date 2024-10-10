@@ -23,7 +23,7 @@ export default function Contact() {
 
       <h1
         className={`text-2xl font-bold sm:text-6xl text-center ${
-          isDark ? "textAnimation" : "text-slate-600"
+          isDark ? "textAnimation" : ""
         }`}
       >
         Welcome to Contact Page
