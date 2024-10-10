@@ -6,13 +6,13 @@ export default function Contact() {
   const [isDark] = useContext(ThemeContext)
   return (
     <main
-      className={`min-h-[89.5vh] tracking-widest ${
+      className={`min-h-[89.5vh] p-4 tracking-widest ${
         isDark ? "bg-slate-950 text-white" : ""
       }`}
     >
       <div className="max-w-[1250px] mx-auto py-4 px-2">
         <button
-          className={`text-2xl sm:border w-20 shadow-lg ${isDark?"bg-slate-700":""}`}
+          className={`text-2xl sm:border w-24 shadow-lg ${isDark?"bg-slate-900":""}`}
           onClick={() => {
             history.back()
           }}
@@ -22,12 +22,16 @@ export default function Contact() {
       </div>
 
       <h1
-        className={`text-2xl font-bold sm:text-4xl text-center ${
+        className={`text-2xl font-bold sm:text-6xl text-center ${
           isDark ? "textAnimation" : "text-slate-600"
         }`}
       >
         Welcome to Contact Page
       </h1>
+
+      <div className="sm:mt-5">
+        <h1 className="text-xl text-center sm:text-4xl">Feel free to contact me! if you need help doing any projects. </h1>
+      </div>
 
       <section className="max-w-[1300px] mt-3 sm:mx-auto sm:p-1 gap-3 sm:grid sm:grid-cols-2 ">
         <Link to={"https://www.whatsApp.com"} className="sm:min-h-[200px] min-w-full sm:border sm:p-1 sm:rounded-lg sm:shadow-xl mt-3">
