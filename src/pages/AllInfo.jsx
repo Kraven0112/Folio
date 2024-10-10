@@ -13,7 +13,7 @@ export default function AllInfo() {
             <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>Country :</b> Nepal</h1>
             <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>District :</b> Kanchanpur</h1>
             <div className='mt-5'>
-                <h1 className='sm:text-2xl text-green-600'><b>Education Level :-</b></h1>
+                <h1 className='text-xl sm:text-2xl text-green-600'><b>Education Level :-</b></h1>
                 <p className='text-xl text-pretty'>I am 12th passed student. I had passed 12th from Sudur Pashchimanchal Academy ,Dhangadhi-Kailali Nepal. I did not complete my degree because of some reasons.</p>
             </div>
 
