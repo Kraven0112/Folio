@@ -12,9 +12,9 @@ export default function Homepage() {
           : ""
       }`}
     >
-      <div className="md:hidden max-w-[300px] mx-auto ">
+      <div className="md:hidden max-w-[400px] mx-auto ">
         <img
-          className="w-80"
+          className="w-[30rem]"
           src="https://as2.ftcdn.net/v2/jpg/05/72/56/97/1000_F_572569703_lAwc7sF8Pa1f5v5EUfD3D6xRZbVDZ27O.webp"
           alt=""
         />

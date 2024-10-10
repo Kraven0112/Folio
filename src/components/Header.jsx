@@ -7,7 +7,7 @@ export default function Header() {
   const [isVisible,setVisibility] = useState(false)
   return (
     <header
-      className={`backdrop-blur tracking-widest md:sticky top-0 px-3 ${
+      className={`backdrop-blur tracking-widest md:sticky top-0 px-3 border shadow-md ${
         isDark ? " bg-slate-800 text-white" : ""
       }`}
     >
@@ -48,7 +48,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <div className={`${isVisible?"sticky flex items-center min-h-[300px] justify-between p-2 flex-col space-y-5 transition-all text-2xl font-bold":"hidden"}`}>
+      <div className={`${isVisible?"fixed bg-slate-300 w-[98%] flex items-center min-h-[300px] justify-between p-2 flex-col space-y-5 transition-all text-2xl font-bold":"hidden"} lg:hidden`}>
         <h1 onClick={()=>{setVisibility(!isVisible)}}>X</h1>
         <Link to={"/"}>Home</Link>
         <Link to={"/contact"}>Contact</Link>

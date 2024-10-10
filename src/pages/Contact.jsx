@@ -30,32 +30,32 @@ export default function Contact() {
       </h1>
 
       <section className="max-w-[1300px] mt-3 mx-auto p-1 gap-3 sm:grid sm:grid-cols-2 ">
-        <Link to={"https://www.whatsApp.com"} className="sm:min-h-[200px] sm:border p-1 rounded-lg shadow-xl mt-2">
+        <Link to={"https://www.whatsApp.com"} className="sm:min-h-[200px] min-w-full sm:border p-1 sm:rounded-lg sm:shadow-xl mt-2">
           <h1 className="text-center text-6xl sm:text-8xl text-green-600"><i className="fa-brands fa-whatsapp"></i></h1>
           <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-green-600">WhatsApp</p>
         </Link>
 
-        <Link to={"https://www.instagram.com"} className="sm:min-h-[200px] sm:border p-1 rounded-lg shadow-xl mt-2">
+        <Link to={"https://www.instagram.com"} className="sm:min-h-[200px] sm:border p-1 sm:rounded-lg sm:shadow-xl mt-2">
           <h1 className="text-center text-6xl sm:text-8xl text-pink-600"><i className="fa-brands fa-instagram"></i></h1>
           <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-pink-600">Instagram</p>
         </Link>
 
-        <Link to={"https://www.telegram.com"} className="sm:min-h-[200px] sm:border p-1 rounded-lg shadow-xl mt-2">
+        <Link to={"https://www.telegram.com"} className="sm:min-h-[200px] sm:border p-1 sm:rounded-lg sm:shadow-xl mt-2">
           <h1 className="text-center text-6xl sm:text-8xl text-blue-600"><i className="fa-brands fa-telegram"></i></h1>
           <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-blue-600">Telegram</p>
         </Link>
 
-        <Link to={"https://www.linkedIn.com"} className="sm:min-h-[200px] sm:border p-1 rounded-lg shadow-xl mt-2">
+        <Link to={"https://www.linkedIn.com"} className="sm:min-h-[200px] sm:border p-1 sm:rounded-lg sm:shadow-xl mt-2">
           <h1 className="text-center text-6xl sm:text-8xl text-sky-600"><i className="fa-brands fa-linkedin"></i></h1>
           <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-sky-600">Linked-In</p>
         </Link>
 
-        <Link to={"https://github.com/Kraven0112"} className="sm:min-h-[200px] sm:border p-1 rounded-lg shadow-xl mt-2">
+        <Link to={"https://github.com/Kraven0112"} className="sm:min-h-[200px] sm:border p-1 sm:rounded-lg sm:shadow-xl mt-2">
           <h1 className="text-center text-6xl sm:text-8xl text-teal-600"><i className="fa-brands fa-github"></i></h1>
           <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-teal-600">GitHub</p>
         </Link>
 
-        <Link to={"https://www.facebook.com"} className="sm:min-h-[200px] sm:border p-1 rounded-lg shadow-xl mt-2">
+        <Link to={"https://www.facebook.com"} className="sm:min-h-[200px] sm:border p-1 sm:rounded-lg sm:shadow-xl mt-2">
           <h1 className="text-center text-6xl sm:text-8xl text-blue-600"><i className="fa-brands fa-facebook"></i></h1>
           <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-blue-600">Facebook</p>
         </Link>
