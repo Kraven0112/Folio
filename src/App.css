@@ -1,0 +1,16 @@
+.textAnimation{
+    animation: letter 5s linear infinite;
+}
+@keyframes letter {
+    0%{color: greenyellow;}
+    25%{color: hotpink;}
+    50%{color: aquamarine;}
+    75%{color: teal;}
+    100%{color: lawngreen;}
+}
+.rounding{
+    animation: 3s intro linear infinite;
+}
+@keyframes intro {
+    0%{rotate: 360deg;}
+}
