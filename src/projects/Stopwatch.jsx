@@ -46,7 +46,7 @@ export default function Stopwatch() {
         >
           StopWatch
         </h1>
-        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold">{minute < 10 ? "0"+minute : minute} : {second < 10 ? "0"+second :second} : {milisecond < 10 ? "0"+milisecond :milisecond}</h1>
+        <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold">{minute < 10 ? "0"+minute : minute} : {second < 10 ? "0"+second :second} : {milisecond < 10 ? "0"+milisecond :milisecond}</h1>
 
         <div className="sm:space-x-5 space-x-2">
           <button

@@ -32,8 +32,8 @@ const handleDecrement = useCallback(()=>{
         >
           Counter
         </h1>
-        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold">{count}</h1>
-        <div className="sm:space-x-5 space-x-2">
+        <h1 className="text-4xl sm:text-6xl lg:text-6xl font-bold">{count}</h1>
+        <div className="sm:space-x-5 space-x-5">
           <button
           onClick={handleDecrement}
             className={`text-xl p-1 w-[120px] sm:w-[300px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
