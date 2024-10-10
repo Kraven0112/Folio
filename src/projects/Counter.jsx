@@ -21,7 +21,7 @@ const handleDecrement = useCallback(()=>{
       }`}
     >
       <div
-        className={`max-w-[1050px] min-h-[300px] sm:min-h-[600px] rounded-lg mx-auto ${
+        className={`max-w-[1050px] min-h-[300px] sm:min-h-[600px] rounded-lg mx-auto sm:mt-5 mt-10 ${
           isDark ? "border" : " shadow-2xl"
         } flex items-center justify-center flex-col gap-10`}
       >
