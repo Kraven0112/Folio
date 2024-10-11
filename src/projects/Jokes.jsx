@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import joke from "../assets/joke.json"
+import BackBtn from "../components/BackBtn"
 
 export default function Jokes() {
   const [isDark] = useContext(ThemeContext)
@@ -21,6 +22,7 @@ export default function Jokes() {
         isDark ? "bg-slate-950 text-white " : ""
       }`}
     >
+      <BackBtn/>
       <div
         className={`max-w-[1050px] min-h-[450px] sm:min-h-[600px] rounded-lg mx-auto sm:mt-5 mt-10 ${
           isDark ? "border" : " shadow-2xl"

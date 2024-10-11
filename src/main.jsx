@@ -11,6 +11,9 @@ import Error from "./error/Error"
 import Jokes from "./projects/Jokes"
 import AllAccessories from "./projects/mobile/AllAccessories"
 import AccessoryDetail from "./projects/mobile/AccessoryDetail"
+import Allgrocery from "./projects/grocery/Allgrocery"
+import GroceryDetail from "./projects/grocery/GroceryDetail"
+import MixProduct from "./projects/MixProduct"
 import './index.css'
 import './App.css'
 
@@ -55,6 +58,18 @@ const route  = createBrowserRouter([
             {
                 path:"/accessorydetail/:producttitle",
                 element:<AccessoryDetail/>
+            },
+            {
+                path:"/grocery",
+                element:<Allgrocery/>
+            },
+            {
+                path:"/grocerydetail/:producttitle",
+                element:<GroceryDetail/>
+            },
+            {
+                path:"mix",
+                element:<MixProduct/>
             }
         ]
     }

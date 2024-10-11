@@ -10,20 +10,15 @@ export default function AllInfo() {
         <h1 className={`text-center text-2xl sm:text-4xl font-bold ${isDark?"textAnimation":""}`}>All Information</h1>
         <div className={`max-w-[1000px] mt-7 sm:mt-5 mx-auto p-3 rounded-lg ${isDark?"shadow-lg shadow-gray-50":" shadow-xl border"}`}>
             <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>Name :</b> Sushil Chaudhary</h1>
-            <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>DOB :</b> 25-04-2003</h1>
             <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>Country :</b> Nepal</h1>
             <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>District :</b> Kanchanpur</h1>
             <div className='mt-5'>
                 <h1 className='text-xl sm:text-2xl text-green-600'><b>Education Level :-</b></h1>
-                <p className='text-xl text-pretty'>I am 12th passed student. I had passed 12th from Sudur Pashchimanchal Academy ,Dhangadhi-Kailali Nepal. I did not complete my degree because of some reasons.</p>
+                <p className='text-xl text-pretty'>I am 12th passed student. I had passed 12th from Sudur Pashchimanchal Academy ,Dhangadhi-Kailali Nepal.</p>
             </div>
 
             <div className='mt-5'>
                 <h1 className='text-xl sm:text-2xl'><b className='text-green-600'>Languages :-</b> Nepali Hindi English</h1>
-            </div>
-
-            <div className='mt-5'>
-                <h1 className='text-xl sm:text-2xl'><b className='text-green-600'>Family-background :-</b> Farmer</h1>
             </div>
 
             <div className='mt-5'>
@@ -55,10 +50,10 @@ export default function AllInfo() {
                 <li className='text-xl text-pretty mt-3'>Next Js</li>
             </div>
             <div className='mt-5 sm:p-5 p-3'>
-                <Link to={"/project"} className={`block p-3 rounded-xl text-xl sm:p-4 sm:text-2xl  text-center font-bold ${isDark?"shadow-lg shadow-cyan-500":"shadow-2xl text-blue-700"}`}>Click to see my projects</Link>
+                <Link to={"/project"} className={`block p-3 rounded-xl text-xl sm:p-4 sm:text-2xl  text-center font-bold ${isDark?"shadow-sm shadow-cyan-500 text-yellow-300":"shadow-xl text-blue-700"}`}>Click to see my projects</Link>
             </div>
             <div className='mt-5 sm:p-5 p-3'>
-                <Link to={"/contact"} className={`block p-3 rounded-xl text-xl sm:p-4 sm:text-2xl  text-center font-bold ${isDark?"shadow-lg shadow-cyan-500":"shadow-2xl text-blue-700"}`}>Click to see my contact detail</Link>
+                <Link to={"/contact"} className={`block p-3 rounded-xl text-xl sm:p-4 sm:text-2xl  text-center font-bold ${isDark?"shadow-sm shadow-cyan-500 text-yellow-300":"shadow-xl text-blue-700"}`}>Click to see my contact detail</Link>
             </div>
         </div>
       </div>

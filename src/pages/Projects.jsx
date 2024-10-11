@@ -16,7 +16,7 @@ export default function Projects() {
 
       <Link
         to={"/counter"}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-10 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-10 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -32,7 +32,7 @@ export default function Projects() {
 
       <Link
         to={"/stopwatch"}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -48,7 +48,7 @@ export default function Projects() {
 
       <Link
         to={"/jokes"}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -64,7 +64,7 @@ export default function Projects() {
 
       <Link
         to={"/accessory"}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -78,8 +78,8 @@ export default function Projects() {
         </div>
       </Link>
       <Link
-        to={""}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        to={"/grocery"}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -94,7 +94,7 @@ export default function Projects() {
       </Link>
       <Link
         to={""}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -108,8 +108,8 @@ export default function Projects() {
         </div>
       </Link>
       <Link
-        to={""}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        to={"/mix"}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -124,7 +124,7 @@ export default function Projects() {
       </Link>
       <Link
         to={""}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -139,7 +139,7 @@ export default function Projects() {
       </Link>
       <Link
         to={""}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
@@ -154,7 +154,7 @@ export default function Projects() {
       </Link>
       <Link
         to={""}
-        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
           <img
