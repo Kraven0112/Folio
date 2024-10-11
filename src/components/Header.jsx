@@ -48,13 +48,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <div className={` ${isDark?"bg-slate-600":"bg-white text-black"} ${isVisible?`fixed  w-[100%] left-0 sm:w-[100%] flex items-center min-h-[300px] justify-between p-2 flex-col space-y-5 transition-all text-2xl font-bold`:"hidden"} lg:hidden`}>
-        <h1 onClick={()=>{setVisibility(!isVisible)}}><i className="fa fa-window-close"></i></h1>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/contact"}>Contact</Link>
-        <Link to={"/project"}>Project</Link>
-        <Link to={"/"}>Blogs</Link>
-      </div>
     </header>
   )
 }

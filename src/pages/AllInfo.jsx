@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
+import { Link } from 'react-router-dom'
 
 export default function AllInfo() {
     const[isDark] = useContext(ThemeContext)
@@ -52,6 +53,12 @@ export default function AllInfo() {
                 <li className='text-xl text-pretty mt-3'>React Js</li>
                 <li className='text-xl text-pretty mt-3'>Node Js</li>
                 <li className='text-xl text-pretty mt-3'>Next Js</li>
+            </div>
+            <div className='mt-5 sm:p-5 p-3'>
+                <Link to={"/project"} className={`block p-3 rounded-xl text-xl sm:p-4 sm:text-2xl  text-center font-bold ${isDark?"shadow-lg shadow-cyan-500":"shadow-2xl text-blue-700"}`}>Click to see my projects</Link>
+            </div>
+            <div className='mt-5 sm:p-5 p-3'>
+                <Link to={"/contact"} className={`block p-3 rounded-xl text-xl sm:p-4 sm:text-2xl  text-center font-bold ${isDark?"shadow-lg shadow-cyan-500":"shadow-2xl text-blue-700"}`}>Click to see my contact detail</Link>
             </div>
         </div>
       </div>
