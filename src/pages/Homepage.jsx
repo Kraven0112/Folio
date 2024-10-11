@@ -58,7 +58,7 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div className="mt-10 sm:mt-8 text-center">
+      <div className="mt-20 sm:mt-8 text-center">
         <Link
           to={"/information"}
           className={`text-2xl sm:text-4xl ${
