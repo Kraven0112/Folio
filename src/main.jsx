@@ -8,6 +8,9 @@ import Projects from "./pages/Projects"
 import Counter from "./projects/Counter"
 import Stopwatch from "./projects/Stopwatch"
 import Error from "./error/Error"
+import Jokes from "./projects/Jokes"
+import AllAccessories from "./projects/mobile/AllAccessories"
+import AccessoryDetail from "./projects/mobile/AccessoryDetail"
 import './index.css'
 import './App.css'
 
@@ -40,6 +43,18 @@ const route  = createBrowserRouter([
             {
                 path:"/stopwatch",
                 element:<Stopwatch/>
+            },
+            {
+                path:"/jokes",
+                element:<Jokes/>
+            },
+            {
+                path:"/accessory",
+                element:<AllAccessories/>
+            },
+            {
+                path:"/accessorydetail/:producttitle",
+                element:<AccessoryDetail/>
             }
         ]
     }

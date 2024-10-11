@@ -13,6 +13,8 @@ const handleDecrement = useCallback(()=>{
     setCount(prev => prev - 1)
 },[])
 
+console.log(count)
+
   
   return (
     <main
@@ -37,7 +39,7 @@ const handleDecrement = useCallback(()=>{
           <button
           onClick={handleDecrement}
             className={`text-xl p-1 w-[120px] sm:w-[300px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
-              isDark ? "border" : "shadow-xl bg-orange-400"
+              isDark ? "bg-green-500 text-slate-950" : "shadow-xl bg-orange-400"
             }`}
           >
             Decrement
@@ -45,7 +47,7 @@ const handleDecrement = useCallback(()=>{
           <button
           onClick={handleIncrement}
             className={`text-xl p-1 w-[120px] sm:w-[300px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
-              isDark ? "border" : "shadow-xl bg-orange-400"
+              isDark ? "bg-green-500 text-slate-950" : "shadow-xl bg-orange-400"
             }`}
           >
             Increment

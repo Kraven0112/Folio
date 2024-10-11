@@ -47,7 +47,7 @@ export default function Projects() {
       </Link>
 
       <Link
-        to={""}
+        to={"/jokes"}
         className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
       >
         <div>
@@ -63,7 +63,7 @@ export default function Projects() {
       </Link>
 
       <Link
-        to={""}
+        to={"/accessory"}
         className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
       >
         <div>
@@ -120,6 +120,21 @@ export default function Projects() {
         <div className="text-center sm:flex sm:items-center sm:justify-center sm:flex-col p-2">
           <h1 className="text-2xl sm:text-4xl text-violet-700 font-bold">Mixed Products</h1>
           <p className="text-xl sm:text-2xl sm:mt-3 mt-2">Click to see mix products project</p>
+        </div>
+      </Link>
+      <Link
+        to={""}
+        className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"border":"shadow-xl"}`}
+      >
+        <div>
+          <img
+            src="https://www.shutterstock.com/image-vector/set-music-player-app-mobile-600nw-2414013693.jpg"
+            alt=""
+          />
+        </div>
+        <div className="text-center sm:flex sm:items-center sm:justify-center sm:flex-col p-2">
+          <h1 className="text-2xl sm:text-4xl text-pink-700 font-bold">Music Player</h1>
+          <p className="text-xl sm:text-2xl sm:mt-3 mt-2">Click to see music player project</p>
         </div>
       </Link>
       <Link
