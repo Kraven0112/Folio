@@ -18,7 +18,7 @@ console.log(count)
   
   return (
     <main
-      className={`min-h-[100vh] sm:min-h-[89.5vh] p-4 flex items-center justify-center ${
+      className={`min-h-[100vh] sm:min-h-[89.5vh] p-4 ${
         isDark ? "bg-slate-950 text-white " : ""
       }`}
     >
