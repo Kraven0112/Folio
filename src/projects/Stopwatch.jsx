@@ -12,7 +12,7 @@ export default function Stopwatch() {
     const handleStart = (()=>{
         const interval = setInterval(()=>{
             setMiliSecond(prev => prev + 1)
-        },12)
+        },10)
 
         setInter(interval)
         return () => clearInterval(interval)

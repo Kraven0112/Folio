@@ -24,7 +24,7 @@ export default function MixProduct() {
     >
       <BackBtn />
       <div
-        className={`max-w-[1050px] min-h-[350px] sm:min-h-[600px] rounded-lg mx-auto sm:mt-5 mt-10 ${
+        className={`max-w-[1050px] min-h-[750px] sm:min-h-[600px] rounded-lg mx-auto sm:mt-5 mt-10 ${
           isDark ? "sm:shadow-sm sm:shadow-white" : " sm:shadow-2xl"
         } flex items-center justify-center flex-col gap-10`}
       >
