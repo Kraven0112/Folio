@@ -46,7 +46,7 @@ export default function Stopwatch() {
     <main className={`min-h-[100vh] sm:min-h-[89.5vh] p-5 ${isDark?"bg-slate-950 text-white":""}`}>
       <BackBtn/>
       <div className={`max-w-[1050px] min-h-[300px] sm:min-h-[600px] sm:mt-5 mt-10 rounded-lg mx-auto ${
-          isDark ? "border" : " shadow-2xl"
+          isDark ? "sm:shadow-sm sm:shadow-white" : " sm:shadow-2xl"
         } flex items-center justify-center flex-col gap-10`}>
                     <h1
           className={` text-4xl md:text-6xl lg:text-8xl font-bold ${
@@ -55,12 +55,12 @@ export default function Stopwatch() {
         >
           StopWatch
         </h1>
-        <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold">{minute < 10 ? "0"+minute : minute}<span className='text-pink-500'>m</span> : {second < 10 ? "0"+second :second}<span className='text-purple-500'>s</span> : {milisecond < 10 ? "0"+milisecond :milisecond}<span className='text-green-500'>ms</span></h1>
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold">{minute < 10 ? "0"+minute : minute}<span className='text-pink-500'>m</span> : {second < 10 ? "0"+second :second}<span className='text-purple-500'>s</span> : {milisecond < 10 ? "0"+milisecond :milisecond}<span className='text-green-500'>ms</span></h1>
 
         <div className="sm:space-x-5 space-x-1">
           <button
           onClick={handleStop}
-            className={`text-xl  w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
+            className={`w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
               isDark ? "bg-orange-500 text-slate-950" : "shadow-xl bg-emerald-400"
             }`}
           >
@@ -68,7 +68,7 @@ export default function Stopwatch() {
           </button>
           <button
           onClick={handleStart}
-            className={`text-xl w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
+            className={`w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
               isDark ? "bg-orange-500 text-slate-950" : "shadow-xl bg-emerald-400"
             }`}
           >
@@ -76,7 +76,7 @@ export default function Stopwatch() {
           </button>
           <button
           onClick={handleReset}
-            className={`text-xl w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
+            className={`w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
               isDark ? "bg-orange-500 text-slate-950" : "shadow-xl bg-emerald-400"
             }`}
           >
