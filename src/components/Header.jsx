@@ -28,7 +28,7 @@ export default function Header() {
           <Link to={"/"}>Blogs</Link>
         </nav>
         <div className="flex">
-          <Link to={"https://github.com/Kraven0112"} className="text-2xl mr-5">
+          <Link to={"https://github.com/Kraven0112"} className=" hidden sm:block sm:text-2xl mr-5">
             Connect
           </Link>
           <p

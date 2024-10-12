@@ -57,7 +57,7 @@ export default function Projects() {
           />
         </div>
         <div className="text-center sm:flex sm:items-center sm:justify-center sm:flex-col p-2">
-          <h1 className="text-2xl sm:text-4xl text-pink-600 font-bold">Jokes Generator</h1>
+          <h1 className="text-2xl sm:text-4xl text-pink-600 font-bold">Jokes</h1>
           <p className="text-xl sm:text-2xl sm:mt-3 mt-2">Click to see jokes generator project</p>
         </div>
       </Link>
@@ -73,7 +73,7 @@ export default function Projects() {
           />
         </div>
         <div className="text-center sm:flex sm:items-center sm:justify-center sm:flex-col p-2">
-          <h1 className="text-2xl sm:text-4xl text-amber-600 font-bold">Mobile Accessories</h1>
+          <h1 className="text-2xl sm:text-4xl text-amber-600 font-bold"> Accessories</h1>
           <p className="text-xl sm:text-2xl sm:mt-3 mt-2">Click to see mobile project</p>
         </div>
       </Link>
@@ -103,7 +103,7 @@ export default function Projects() {
           />
         </div>
         <div className="text-center sm:flex sm:items-center sm:justify-center sm:flex-col p-2">
-          <h1 className="text-2xl sm:text-4xl text-purple-700 font-bold">Rest Countries</h1>
+          <h1 className="text-2xl sm:text-4xl text-purple-700 font-bold">Countries API</h1>
           <p className="text-xl sm:text-2xl sm:mt-3 mt-2">Click to see rest-countries project</p>
         </div>
       </Link>

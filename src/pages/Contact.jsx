@@ -19,11 +19,11 @@ export default function Contact() {
         </h1>
       </div>
 
-      <section className="max-w-[1300px] mt-3 sm:mt-5 sm:mx-auto sm:p-1 gap-3 sm:grid sm:grid-cols-2 sm:gap-y-10">
+      <section className="max-w-[1300px] mt-3 sm:mt-5 sm:mx-auto sm:p-1 gap-y-20 grid sm:grid-cols-2 sm:gap-x-3 sm:gap-y-10">
         <Link
           to={"https://www.whatsApp.com"}
-          className={`sm:min-h-[200px] sm:p-1 sm:rounded-lg ${
-            isDark ? "sm:shadow-md sm:shadow-green-600" : "sm:shadow-xl"
+          className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
+            isDark ? "shadow-md shadow-green-600" : "shadow-xl"
           }`}
         >
           <h1 className="text-center text-6xl sm:text-8xl text-green-600">
@@ -36,8 +36,8 @@ export default function Contact() {
 
         <Link
           to={"https://www.instagram.com"}
-          className={`sm:min-h-[200px] sm:p-1 sm:rounded-lg ${
-            isDark ? "shadow-md shadow-green-600" : "shadow-xl"
+          className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
+            isDark ? "shadow-md shadow-pink-600" : "shadow-xl"
           }`}
         >
           <h1 className="text-center text-6xl sm:text-8xl text-pink-600">
@@ -50,8 +50,8 @@ export default function Contact() {
 
         <Link
           to={"https://www.telegram.com"}
-          className={`sm:min-h-[200px] sm:p-1 sm:rounded-lg ${
-            isDark ? "shadow-md shadow-green-600" : "shadow-xl"
+          className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
+            isDark ? "shadow-md shadow-blue-600" : "shadow-xl"
           }`}
         >
           <h1 className="text-center text-6xl sm:text-8xl text-blue-600">
@@ -64,8 +64,8 @@ export default function Contact() {
 
         <Link
           to={"https://www.linkedIn.com"}
-          className={`sm:min-h-[200px] sm:p-1 sm:rounded-lg ${
-            isDark ? "shadow-md shadow-green-600" : "shadow-xl"
+          className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
+            isDark ? "shadow-md shadow-sky-600" : "shadow-xl"
           }`}
         >
           <h1 className="text-center text-6xl sm:text-8xl text-sky-600">
@@ -78,8 +78,8 @@ export default function Contact() {
 
         <Link
           to={"https://github.com/Kraven0112"}
-          className={`sm:min-h-[200px] sm:p-1 sm:rounded-lg ${
-            isDark ? "shadow-md shadow-green-600" : "shadow-xl"
+          className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
+            isDark ? "shadow-md shadow-teal-600" : "shadow-xl"
           }`}
         >
           <h1 className="text-center text-6xl sm:text-8xl text-teal-600">
@@ -92,8 +92,8 @@ export default function Contact() {
 
         <Link
           to={"https://www.facebook.com"}
-          className={`sm:min-h-[200px] sm:p-1 sm:rounded-lg ${
-            isDark ? "shadow-md shadow-green-600" : "shadow-xl"
+          className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
+            isDark ? "shadow-md shadow-blue-600" : "shadow-xl"
           }`}
         >
           <h1 className="text-center text-6xl sm:text-8xl text-blue-600">

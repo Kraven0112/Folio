@@ -1,11 +1,13 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
 import { Link } from 'react-router-dom'
+import BackBtn from '../components/BackBtn'
 
 export default function AllInfo() {
     const[isDark] = useContext(ThemeContext)
   return (
     <main className={`min-h-[89.5vh] p-4 ${isDark?"bg-slate-950 text-white":""}`}>
+        <BackBtn/>
       <div className='max-w-[1250px] mx-auto'>
         <h1 className={`text-center text-2xl sm:text-4xl font-bold ${isDark?"textAnimation":""}`}>All Information</h1>
         <div className={`max-w-[1000px] mt-7 sm:mt-5 mx-auto p-3 rounded-lg ${isDark?"shadow-lg shadow-gray-50":" shadow-xl border"}`}>

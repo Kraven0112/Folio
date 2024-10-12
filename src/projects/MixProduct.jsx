@@ -38,7 +38,7 @@ export default function MixProduct() {
 
         <div>
           <img
-            className=" w-[300px] h-[200px] md:w-[450px] md:h-[350px]"
+            className=" w-[300px] h-[250px] md:w-[450px] md:h-[350px]"
             src={ data?.images[2] || data?.images[0]}
             alt="product"
           />
