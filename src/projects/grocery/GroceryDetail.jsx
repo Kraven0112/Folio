@@ -33,7 +33,7 @@ export default function GroceryDetail() {
         <BackBtn/>
       <div
         className={` max-w-[1050px] sm:min-h-[600px] sm:grid sm:grid-cols-2 rounded-lg mx-auto sm:mt-5 mt-15 p-3 ${
-          isDark ? "" : " shadow-2xl"
+          isDark ? "" : " sm:shadow-2xl"
         }`}
       >
         <div className="sm:flex items-center justify-center">
