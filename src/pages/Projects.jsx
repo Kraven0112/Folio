@@ -138,7 +138,7 @@ export default function Projects() {
         </div>
       </Link>
       <Link
-        to={""}
+        to={"/cat"}
         className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>
@@ -153,7 +153,7 @@ export default function Projects() {
         </div>
       </Link>
       <Link
-        to={""}
+        to={"/dog"}
         className={`block sm:grid sm:grid-cols-2 sm:max-w-[1100px] sm:mx-auto sm:mt-7 mt-5 rounded-lg overflow-hidden ${isDark?"shadow-sm shadow-teal-500":"shadow-xl"}`}
       >
         <div>

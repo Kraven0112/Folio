@@ -14,9 +14,6 @@ const handleDecrement = useCallback(()=>{
     setCount(prev => prev - 1)
 },[])
 
-console.log(count)
-
-  
   return (
     <main
       className={`min-h-[100vh] sm:min-h-[89.5vh] p-4 ${

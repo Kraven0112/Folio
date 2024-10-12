@@ -14,6 +14,8 @@ import AccessoryDetail from "./projects/mobile/AccessoryDetail"
 import Allgrocery from "./projects/grocery/Allgrocery"
 import GroceryDetail from "./projects/grocery/GroceryDetail"
 import MixProduct from "./projects/MixProduct"
+import CatImages from "./projects/CatImages"
+import DogImages from "./projects/DogImages"
 import './index.css'
 import './App.css'
 
@@ -70,6 +72,14 @@ const route  = createBrowserRouter([
             {
                 path:"mix",
                 element:<MixProduct/>
+            },
+            {
+                path:"/cat",
+                element:<CatImages/>
+            },
+            {
+                path:"/dog",
+                element:<DogImages/>
             }
         ]
     }

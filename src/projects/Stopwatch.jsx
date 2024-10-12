@@ -47,7 +47,7 @@ export default function Stopwatch() {
       <BackBtn/>
       <div className={`max-w-[1050px] min-h-[300px] sm:min-h-[600px] sm:mt-5 mt-10 rounded-lg mx-auto ${
           isDark ? "sm:shadow-sm sm:shadow-white" : " sm:shadow-2xl"
-        } flex items-center justify-center flex-col gap-10`}>
+        } flex items-center justify-center flex-col gap-14 sm:gap-14`}>
                     <h1
           className={` text-4xl md:text-6xl lg:text-8xl font-bold ${
             isDark ? "textAnimation" : "text-sky-900"
@@ -57,10 +57,10 @@ export default function Stopwatch() {
         </h1>
         <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold">{minute < 10 ? "0"+minute : minute}<span className='text-pink-500'>m</span> : {second < 10 ? "0"+second :second}<span className='text-purple-500'>s</span> : {milisecond < 10 ? "0"+milisecond :milisecond}<span className='text-green-500'>ms</span></h1>
 
-        <div className="sm:space-x-5 space-x-1">
+        <div className="sm:space-x-5 space-x-1 flex items-center justify-center">
           <button
           onClick={handleStop}
-            className={`w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
+            className={`w-[90px] sm:w-[200px] lg:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
               isDark ? "bg-orange-500 text-slate-950" : "shadow-xl bg-emerald-400"
             }`}
           >
@@ -68,7 +68,7 @@ export default function Stopwatch() {
           </button>
           <button
           onClick={handleStart}
-            className={`w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
+            className={`w-[100px] sm:w-[200px] lg:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
               isDark ? "bg-orange-500 text-slate-950" : "shadow-xl bg-emerald-400"
             }`}
           >
@@ -76,7 +76,7 @@ export default function Stopwatch() {
           </button>
           <button
           onClick={handleReset}
-            className={`w-[90px] sm:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
+            className={`w-[90px] sm:w-[200px] lg:w-[250px] sm:h-12 sm:text-2xl rounded-lg font-bold ${
               isDark ? "bg-orange-500 text-slate-950" : "shadow-xl bg-emerald-400"
             }`}
           >
