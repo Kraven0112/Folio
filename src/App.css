@@ -1,3 +1,6 @@
+*{
+    letter-spacing: 1px;
+}
 .textAnimation{
     animation: letter 5s linear infinite;
 }
