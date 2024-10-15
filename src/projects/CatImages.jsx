@@ -25,11 +25,12 @@ export default function CatImages() {
       <div
         className={`max-w-[1050px] min-h-[300px] sm:min-h-[600px] rounded-lg mx-auto sm:mt-5 mt-10 ${
           isDark ? "sm:shadow-sm sm:shadow-white" : " sm:shadow-2xl"
-        } flex items-center justify-center flex-col gap-10`}
+        } flex items-center justify-center flex-col gap-5`}
       >
-        <div>
-          <img className={`w-full h-[300px] md:w-full md:h-[450px] rounded-md`} src={single?.image} alt="" />
+        <div className="w-full h-[300px] md:w-full md:h-[500px] flex items-center justify-center">
+          <img className={` rounded-md aspect-auto w-[80%] object-cover h-full`} src={single?.image} alt="" />
         </div>
+
         <div>
         <button
           onClick={handleRandom}
@@ -40,6 +41,7 @@ export default function CatImages() {
           Random Cat
         </button>
         </div>
+
       </div>
     </main>
   )
