@@ -21,7 +21,7 @@ export default function Allgrocery() {
 
       <section className=" space-y-5 sm:flex sm:items-center sm:justify-between sm:flex-wrap sm:gap-y-5 sm:mt-5 mt-5">
         {allGrocery?.filter((grocery)=>{
-            return grocery.title.toLowerCase().includes(query)
+            return grocery.title.toLowerCase().includes(query) || grocery.title.includes(query)
         })
         .map((grocery) => {
           return (
