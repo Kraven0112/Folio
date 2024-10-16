@@ -13,7 +13,6 @@ export default function AllInfo() {
         <div className={`max-w-[1000px] mt-7 sm:mt-5 mx-auto p-3 rounded-lg ${isDark?"shadow-lg shadow-gray-50":" shadow-xl border"}`}>
             <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>Name :</b> Sushil Chaudhary</h1>
             <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>Country :</b> Nepal</h1>
-            <h1 className='text-xl sm:mt-4 sm:text-2xl'><b>District :</b> Kanchanpur</h1>
             <div className='mt-5'>
                 <h1 className='text-xl sm:text-2xl text-green-600'><b>Education Level :-</b></h1>
                 <p className='text-xl text-pretty'>I am 12th passed student. I had passed 12th from Sudur Pashchimanchal Academy ,Dhangadhi-Kailali Nepal.</p>

@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react"
 import { ThemeContext } from "../../contexts/ThemeContext"
 import BackBtn from "../../components/BackBtn"
-import useFetch from "../../customHooks/useFetch"
 import { Link, useParams } from "react-router-dom"
 
 export default function CountryDetail() {
@@ -26,11 +25,13 @@ export default function CountryDetail() {
           continent: data.continents[0],
           flag: data.flags.svg,
           population: data.population.toLocaleString("en-IN"),
-          borders: [],
+          borders:null,
         })
-
+        if(data.borders == undefined){
+          return
+        }
         Promise.all(
-          data.borders.map((border) => {
+          data.borders?.map((border) => {
             return fetch(`https://restcountries.com/v3.1/alpha/${border}`)
               .then((res) => res.json())
               .then(([data]) => data.name.common)
@@ -84,7 +85,7 @@ export default function CountryDetail() {
           <p className="text-lg sm:text-xl font-bold r">
             Population : {single?.population}
           </p>
-          {!single?.borders == [] ? (
+          {!single?.borders ? (
           <h1 className="text-xl md:text-2xl font-bold">I have no border countries. I am introvert country.</h1>
         ) : (
           <div className="flex flex-wrap  mt-5">

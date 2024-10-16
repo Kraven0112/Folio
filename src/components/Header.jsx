@@ -7,7 +7,7 @@ export default function Header() {
   const [isVisible,setVisibility] = useState(false)
   return (
     <header
-      className={` backdrop-blur-2xl tracking-widest md:sticky top-0 px-3  ${
+      className={` backdrop-blur-2xl tracking-widest md:sticky top-0 px-3 z-10  ${
         isDark ? " bg-slate-800 text-white" : "border shadow-md"
       }`}
     >
