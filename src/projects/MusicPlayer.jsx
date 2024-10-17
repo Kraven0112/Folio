@@ -29,7 +29,7 @@ export default function MusicPlayer() {
         className={`max-w-[1050px] min-h-[750px] sm:min-h-[600px] rounded-lg mx-auto sm:mt-5 mt-10 flex items-center justify-center flex-col`}
       >
         <div
-          className={`w-full  sm:w-[350px] sm:min-h-[480px] rounded-lg ${
+          className={`w-full  sm:w-[350px] sm:min-h-[490px] rounded-lg ${
             isDark ? "sm:shadow-sm sm:shadow-white" : " sm:shadow-2xl"
           } `}
         >
