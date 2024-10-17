@@ -1,20 +1,26 @@
 import React, { useContext, useRef, useState } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import BackBtn from "../components/BackBtn"
+import song from "../assets/Jhaanjar.mp3"
 
 export default function MusicPlayer() {
   const [isDark] = useContext(ThemeContext)
   const[status,setStatus] = useState(true)
-  const ref = useRef(0)
+  const ref = useRef()
 
-    const handleMusic = (()=>{
-        setStatus(!status)
+    const handlePlay = (()=>{
+      setStatus(!status)
+      ref.current.play() 
     })
-  
+    const handlePause = (()=>{
+      setStatus(!status)
+      ref.current.pause() 
+    })
+
 
   return (
     <main
-      className={`min-h-[100vh] sm:min-h-[89.5vh] p-4 ${
+      className={`min-h-[100vh] sm:min-font-boldh-[89.5vh] p-4 ${
         isDark ? "bg-slate-950 text-white " : ""
       }`}
     >
@@ -43,19 +49,12 @@ export default function MusicPlayer() {
           </div>
 
           <audio ref={ref}>
-            <source src="./"/>
+            <source src={song}/>
           </audio>
 
-          <div className="text-center mt-5">
-            <button className={`w-[100px] mt-5 text-2xl`}>
-              <i className="fa-solid fa-backward"></i>
-            </button>
-            <button onClick={handleMusic} className={`w-[100px] mt-5 text-2xl`}>
-              <i className={`fa-solid fa-${status ? "play":"pause"}`}></i>
-            </button>
-            <button className={`w-[100px] mt-5 text-2xl`}>
-              <i className="fa-solid fa-forward"></i>
-            </button>
+          <div className="text-center mt-15 md:mt-12 space-x-12">
+              <button onClick={handlePlay} className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${isDark?"shadow-sm shadow-white":" shadow-md"}`}>Play</button>
+              <button onClick={handlePause} className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${isDark?"shadow-sm shadow-white":" shadow-md"}`}>Pause</button>
           </div>
         </div>
       </div>
