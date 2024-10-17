@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import BackBtn from "../components/BackBtn"
-import song from "../assets/Lehnga.mp3"
+import song from "../assets/ChanSitare.mp3"
 
 export default function MusicPlayer() {
   const [isDark] = useContext(ThemeContext)
@@ -34,11 +34,11 @@ export default function MusicPlayer() {
           } `}
         >
           <div className="mt-3">
-            <h1 className="text-center text-2xl lg:text-4xl font-bold">
+            <h1 className="text-center text-4xl lg:text-4xl font-bold">
               Music Player
             </h1>
           </div>
-          <div className="w-full flex items-center justify-center mt-6">
+          <div className="w-full flex items-center justify-center mt-10">
             <img
               className={`w-[300px] h-[300px] aspect-square object-cover rounded-full roam ${
                 isDark ? "shadow-md shadow-white" : " shadow-md shadow-pink-600"
