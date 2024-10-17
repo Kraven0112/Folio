@@ -44,7 +44,7 @@ export default function DogImages() {
                 : "shadow-xl bg-slate-950 text-white"
             }`}
           >
-            Random Cat
+            Random Dog
           </button>
         </div>
       </div>
