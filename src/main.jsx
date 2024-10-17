@@ -18,6 +18,7 @@ import CatImages from "./projects/CatImages"
 import DogImages from "./projects/DogImages"
 import AllCountry from "./projects/countries/AllCountry"
 import CountryDetail from "./projects/countries/CountryDetail"
+import MusicPlayer from "./projects/MusicPlayer"
 import './index.css'
 import './App.css'
 
@@ -90,6 +91,10 @@ const route  = createBrowserRouter([
             {
                 path:"/country/:title",
                 element:<CountryDetail/>
+            },
+            {
+                path:"/music",
+                element:<MusicPlayer/>
             }
         ]
     }
