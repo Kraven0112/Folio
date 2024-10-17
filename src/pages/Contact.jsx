@@ -14,8 +14,8 @@ export default function Contact() {
       <BackBtn/>
 
       <div className="sm:mt-5">
-        <h1 className="text-lg text-center sm:text-4xl">
-          Feel free to contact me! if you need help to do any projects.{" "}
+        <h1 className="text-lg text-center sm:text-4xl font-bold">
+          Contacts
         </h1>
       </div>
 

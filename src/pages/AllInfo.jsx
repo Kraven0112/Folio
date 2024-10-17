@@ -50,10 +50,10 @@ export default function AllInfo() {
                 <li className='text-xl text-pretty mt-3'>Node Js</li>
                 <li className='text-xl text-pretty mt-3'>Next Js</li>
             </div>
-            <div className='mt-5 sm:p-5 p-3'>
+            <div className='mt-5 sm:p-5 p-3 lg:hidden'>
                 <Link to={"/project"} className={`block p-3 rounded-xl text-xl sm:p-4 sm:text-2xl  text-center font-bold ${isDark?"shadow-sm shadow-cyan-500 text-yellow-300":"shadow-xl text-blue-700"}`}>Click to see my projects</Link>
             </div>
-            <div className='mt-5 sm:p-5 p-3'>
+            <div className='mt-5 sm:p-5 p-3 lg:hidden'>
                 <Link to={"/contact"} className={`block p-3 rounded-xl text-xl sm:p-4 sm:text-2xl  text-center font-bold ${isDark?"shadow-sm shadow-cyan-500 text-yellow-300":"shadow-xl text-blue-700"}`}>Click to see my contact detail</Link>
             </div>
         </div>

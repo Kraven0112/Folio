@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import { Link } from "react-router-dom"
+import BackBtn from "../components/BackBtn"
 
 export default function Projects() {
   const [isDark] = useContext(ThemeContext)
@@ -10,6 +11,7 @@ export default function Projects() {
         isDark ? "bg-slate-950 text-white" : ""
       }`}
     >
+      <BackBtn/>
       <div>
         <h1 className={`text-center text-2xl sm:text-6xl  font-bold ${isDark?"textAnimation":"text-purple-800"}`}>My Projects</h1>
       </div>

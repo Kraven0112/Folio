@@ -4,7 +4,7 @@ export default function BackBtn() {
   return (
     <div className="max-w-[1300px] mx-auto  px-2 hidden sm:block">
       <button
-        className={`text-2xl`}
+        className={`text-xl`}
         onClick={() => {
           history.back()
         }}

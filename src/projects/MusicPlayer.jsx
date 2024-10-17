@@ -1,22 +1,21 @@
 import React, { useContext, useRef, useState } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import BackBtn from "../components/BackBtn"
-import song from "../assets/ChanSitare.mp3"
+import song from "../assets/Burahaal.mp3"
 
 export default function MusicPlayer() {
   const [isDark] = useContext(ThemeContext)
-  const[status,setStatus] = useState(true)
+  const [status, setStatus] = useState(true)
   const ref = useRef()
 
-    const handlePlay = (()=>{
-      setStatus(!status)
-      ref.current.play() 
-    })
-    const handlePause = (()=>{
-      setStatus(!status)
-      ref.current.pause() 
-    })
-
+  const handlePlay = () => {
+    setStatus(!status)
+    ref.current.play()
+  }
+  const handlePause = () => {
+    setStatus(!status)
+    ref.current.pause()
+  }
 
   return (
     <main
@@ -49,12 +48,26 @@ export default function MusicPlayer() {
           </div>
 
           <audio ref={ref}>
-            <source src={song}/>
+            <source src={song} />
           </audio>
 
           <div className="text-center mt-20 md:mt-12 space-x-12">
-              <button onClick={handlePlay} className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${isDark?"shadow-sm shadow-white":" shadow-md"}`}>Play</button>
-              <button onClick={handlePause} className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${isDark?"shadow-sm shadow-white":" shadow-md"}`}>Pause</button>
+            <button
+              onClick={handlePlay}
+              className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${
+                isDark ? "shadow-sm shadow-white" : " shadow-md"
+              }`}
+            >
+              Play
+            </button>
+            <button
+              onClick={handlePause}
+              className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${
+                isDark ? "shadow-sm shadow-white" : " shadow-md"
+              }`}
+            >
+              Pause
+            </button>
           </div>
         </div>
       </div>

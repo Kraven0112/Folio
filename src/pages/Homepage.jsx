@@ -8,7 +8,7 @@ export default function Homepage() {
     <main
       className={`min-h-[95vh] sm:min-h-[89.5vh] sm:flex flex-col items-center justify-center ${
         isDark
-          ? "bg-[url('https://static.simpledesktops.com/uploads/desktops/2017/06/02/bg-wallpaper.png.943x630_q100.png')] text-white"
+          ? "bg-slate-950 text-white"
           : ""
       }`}
     >
