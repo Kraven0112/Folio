@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import BackBtn from "../components/BackBtn"
-import song from "../assets/Jhaanjar.mp3"
+import song from "../assets/Lehnga.mp3"
 
 export default function MusicPlayer() {
   const [isDark] = useContext(ThemeContext)
@@ -29,16 +29,16 @@ export default function MusicPlayer() {
         className={`max-w-[1050px] min-h-[750px] sm:min-h-[600px] rounded-lg mx-auto sm:mt-5 mt-10 flex items-center justify-center flex-col`}
       >
         <div
-          className={`w-full sm:w-[350px] min-h-[500px] rounded-lg ${
+          className={`w-full  sm:w-[350px] sm:min-h-[480px] rounded-lg ${
             isDark ? "sm:shadow-sm sm:shadow-white" : " sm:shadow-2xl"
           } `}
         >
           <div className="mt-3">
-            <h1 className="text-center text-xl sm:text-2xl lg:text-4xl font-bold">
+            <h1 className="text-center text-2xl lg:text-4xl font-bold">
               Music Player
             </h1>
           </div>
-          <div className="w-full flex items-center justify-center mt-5">
+          <div className="w-full flex items-center justify-center mt-6">
             <img
               className={`w-[300px] h-[300px] aspect-square object-cover rounded-full roam ${
                 isDark ? "shadow-md shadow-white" : " shadow-md shadow-pink-600"
@@ -52,7 +52,7 @@ export default function MusicPlayer() {
             <source src={song}/>
           </audio>
 
-          <div className="text-center mt-15 md:mt-12 space-x-12">
+          <div className="text-center mt-20 md:mt-12 space-x-12">
               <button onClick={handlePlay} className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${isDark?"shadow-sm shadow-white":" shadow-md"}`}>Play</button>
               <button onClick={handlePause} className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${isDark?"shadow-sm shadow-white":" shadow-md"}`}>Pause</button>
           </div>
