@@ -21,7 +21,7 @@ export default function Contact() {
 
       <section className="max-w-[1300px] mt-3 sm:mt-5 sm:mx-auto sm:p-1 gap-y-20 grid sm:grid-cols-2 sm:gap-x-3 sm:gap-y-10">
         <Link
-          to={"https://www.whatsapp.com/"}
+          to={'/whatsapp'}
           className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
             isDark ? "shadow-md shadow-green-600" : "shadow-xl"
           }`}
@@ -35,7 +35,7 @@ export default function Contact() {
         </Link>
 
         <Link
-          to={"https://www.instagram.com"}
+          to={'/instagram'}
           className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
             isDark ? "shadow-md shadow-pink-600" : "shadow-xl"
           }`}
@@ -49,7 +49,7 @@ export default function Contact() {
         </Link>
 
         <Link
-          to={"https://www.telegram.com"}
+          to={'/telegram'}
           className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
             isDark ? "shadow-md shadow-blue-600" : "shadow-xl"
           }`}
@@ -63,7 +63,7 @@ export default function Contact() {
         </Link>
 
         <Link
-          to={"https://www.linkedIn.com"}
+          to={'/linkedin'}
           className={`sm:min-h-[200px] min-h-[200px] sm:p-1 sm:rounded-lg ${
             isDark ? "shadow-md shadow-sky-600" : "shadow-xl"
           }`}

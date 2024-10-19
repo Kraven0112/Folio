@@ -19,6 +19,7 @@ import DogImages from "./projects/DogImages"
 import AllCountry from "./projects/countries/AllCountry"
 import CountryDetail from "./projects/countries/CountryDetail"
 import MusicPlayer from "./projects/MusicPlayer"
+import WhatsApp from "./Contacts/WhatsApp"
 import './index.css'
 import './App.css'
 
@@ -95,6 +96,10 @@ const route  = createBrowserRouter([
             {
                 path:"/music",
                 element:<MusicPlayer/>
+            },
+            {
+                path:"/whatsapp",
+                element:<WhatsApp/>
             }
         ]
     }

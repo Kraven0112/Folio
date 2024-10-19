@@ -15,10 +15,10 @@ export default function Header() {
         <div>
           <h1
             className={`text-2xl sm:text-4xl font-bold ${
-              isDark ? "textAnimation" : "text-green-700"
+              isDark ? "textAnimation" : "text-green-500"
             }`}
           >
-            Coder
+          {" </ Coder >"}
           </h1>
         </div>
         <nav className="space-x-20 text-xl font-bold lg:block hidden">

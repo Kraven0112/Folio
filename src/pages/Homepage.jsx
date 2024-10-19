@@ -29,7 +29,7 @@ export default function Homepage() {
         </h1>
         <p
           className={`text-2xl sm:text-4xl sm:mt-4 font-bold ${
-            isDark ? "" : "text-green-600"
+            isDark ? "" : "text-green-500"
           }`}
         >
           Sushil Chaudhary here !!
