@@ -20,7 +20,7 @@ export default function Instagram() {
         <Link to={"https://www.instagram.com/s_u_s_h_i_l_0112/"} className={` block md:max-w-[800px] md:h-[250px] mx-auto rounded-lg mt-12 md:mt-16 p-3 text-center space-x-6 lg:space-y-8  ${isDark?"shadow-sm shadow-white ":"shadow-lg bg-slate-300"}`}>
             <h1 className={`text-4xl font-bold md:text-6xl text-pink-600`}> <i className='fa-brands fa-instagram'></i> Instagram</h1>
             <p className='text-2xl md:text-4xl'>ID : s_u_s_h_i_l_0112</p>
-            <p className={`text-xl md:text-2xl font-bold ${isDark?"text-blue-600":"text-green-600"}`}>Click the box to see forward</p>
+            <p className={`text-xl md:text-2xl font-bold ${isDark?"text-blue-600":"text-green-600"}`}>Click the box to see instagram</p>
         </Link>
     </main>
   )
