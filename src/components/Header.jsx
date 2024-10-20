@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header
       className={` backdrop-blur-2xl tracking-widest md:sticky top-0 px-3 z-10  ${
-        isDark ? " bg-slate-800 text-white" : "border shadow-md"
+        isDark ? " bg-slate-800 text-white" : "border shadow-md bg-white"
       }`}
     >
       <div className="max-w-[1200px] h-20 mx-auto flex items-center justify-between">
@@ -21,7 +21,7 @@ export default function Header() {
           {" </ Coder >"}
           </h1>
         </div>
-        <nav className="space-x-20 text-xl font-bold lg:block hidden">
+        <nav className="space-x-20 text-xl lg:block hidden">
           <Link to={"/"}>Home</Link>
           <Link to={"/contact"}>Contact</Link>
           <Link to={"/project"}>Project</Link>
