@@ -29,7 +29,7 @@ export default function Homepage() {
         </h1>
         <p
           className={`text-2xl sm:text-4xl sm:mt-4 font-bold ${
-            isDark ? "" : "text-green-500"
+            isDark ? "" : "text-green-600"
           }`}
         >
           Sushil Chaudhary here !!
@@ -61,7 +61,7 @@ export default function Homepage() {
       <div className="mt-20 sm:mt-8 text-center">
         <Link
           to={"/information"}
-          className={`text-2xl sm:text-4xl ${
+          className={`text-xl sm:text-2xl ${
             isDark ? "text-cyan-600" : "text-purple-900"
           }`}
         >

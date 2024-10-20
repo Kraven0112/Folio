@@ -5,7 +5,7 @@ import song from "../assets/Burahaal.mp3"
 
 export default function MusicPlayer() {
   const [isDark] = useContext(ThemeContext)
-  const [status, setStatus] = useState(true)
+  const [status, setStatus] = useState(false)
   const ref = useRef()
 
   const handlePlay = () => {
@@ -51,22 +51,22 @@ export default function MusicPlayer() {
             <source src={song} />
           </audio>
 
-          <div className="text-center mt-20 md:mt-12 space-x-12">
+          <div className="text-center mt-20 md:mt-10 ">
             <button
-              onClick={handlePlay}
-              className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${
-                isDark ? "shadow-sm shadow-white" : " shadow-md"
-              }`}
+              className={` w-[100px] h-[35px] text-xl rounded-md font-bold`}
             >
-              Play
+              <i className={`fa-solid fa-backward`}></i>
             </button>
             <button
-              onClick={handlePause}
-              className={` w-[100px] sm:w-[130px] h-[35px] text-xl rounded-md font-bold${
-                isDark ? "shadow-sm shadow-white" : " shadow-md"
-              }`}
+              onClick={status ? handlePause : handlePlay}
+              className={` w-[100px] h-[35px] text-xl rounded-md font-bold`}
             >
-              Pause
+              <i className={`fa-solid fa-${status?"pause":"play"}`}></i>
+            </button>
+            <button
+              className={` w-[100px] h-[35px] text-xl rounded-md font-bold`}
+            >
+              <i className={`fa-solid fa-forward `}></i>
             </button>
           </div>
         </div>

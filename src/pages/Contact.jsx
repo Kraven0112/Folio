@@ -14,7 +14,7 @@ export default function Contact() {
       <BackBtn/>
 
       <div className="sm:mt-5">
-        <h1 className="text-lg text-center sm:text-4xl font-bold">
+        <h1 className="text-xl text-center  lg:text-6xl font-bold">
           Contacts
         </h1>
       </div>
@@ -29,7 +29,7 @@ export default function Contact() {
           <h1 className="text-center text-6xl sm:text-8xl text-green-600">
             <i className="fa-brands fa-whatsapp"></i>
           </h1>
-          <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-green-600">
+          <p className="text-center mt-3 text-2xl  font-bold text-green-600">
             WhatsApp
           </p>
         </Link>
@@ -43,7 +43,7 @@ export default function Contact() {
           <h1 className="text-center text-6xl sm:text-8xl text-pink-600">
             <i className="fa-brands fa-instagram"></i>
           </h1>
-          <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-pink-600">
+          <p className="text-center mt-3 text-2xl font-bold text-pink-600">
             Instagram
           </p>
         </Link>
@@ -57,7 +57,7 @@ export default function Contact() {
           <h1 className="text-center text-6xl sm:text-8xl text-blue-600">
             <i className="fa-brands fa-telegram"></i>
           </h1>
-          <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-blue-600">
+          <p className="text-center mt-3 text-2xl font-bold text-blue-600">
             Telegram
           </p>
         </Link>
@@ -71,7 +71,7 @@ export default function Contact() {
           <h1 className="text-center text-6xl sm:text-8xl text-sky-600">
             <i className="fa-brands fa-linkedin"></i>
           </h1>
-          <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-sky-600">
+          <p className="text-center mt-3 text-2xl font-bold text-sky-600">
             Linked-In
           </p>
         </Link>
@@ -85,7 +85,7 @@ export default function Contact() {
           <h1 className="text-center text-6xl sm:text-8xl text-teal-600">
             <i className="fa-brands fa-github"></i>
           </h1>
-          <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-teal-600">
+          <p className="text-center mt-3 text-2xl font-bold text-teal-600">
             GitHub
           </p>
         </Link>
@@ -99,7 +99,7 @@ export default function Contact() {
           <h1 className="text-center text-6xl sm:text-8xl text-blue-600">
             <i className="fa-brands fa-facebook"></i>
           </h1>
-          <p className="text-center mt-3 text-2xl sm:text-4xl font-bold text-blue-600">
+          <p className="text-center mt-3 text-2xl font-bold text-blue-600">
             Facebook
           </p>
         </Link>

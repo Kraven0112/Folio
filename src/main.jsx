@@ -20,6 +20,7 @@ import AllCountry from "./projects/countries/AllCountry"
 import CountryDetail from "./projects/countries/CountryDetail"
 import MusicPlayer from "./projects/MusicPlayer"
 import WhatsApp from "./Contacts/WhatsApp"
+import Instagram from "./Contacts/Instagram"
 import './index.css'
 import './App.css'
 
@@ -100,6 +101,10 @@ const route  = createBrowserRouter([
             {
                 path:"/whatsapp",
                 element:<WhatsApp/>
+            },
+            {
+                path:"/instagram",
+                element:<Instagram/>
             }
         ]
     }
