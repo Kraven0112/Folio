@@ -11,7 +11,7 @@ export default function Header() {
         isDark ? " bg-slate-800 text-white" : "border shadow-md bg-white"
       }`}
     >
-      <div className="max-w-[1200px] h-20 mx-auto flex items-center justify-between">
+      <div className="max-w-[1300px] h-20 mx-auto flex items-center justify-between">
         <div>
           <h1
             className={`text-xl sm:text-2xl font-bold ${

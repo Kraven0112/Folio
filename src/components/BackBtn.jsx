@@ -9,7 +9,7 @@ export default function BackBtn() {
           history.back()
         }}
       >
-        <i className="fa-solid fa-arrow-left"></i> Back
+        <i className="fa-solid fa-arrow-left"></i>Back
       </button>
     </div>
   )

@@ -21,6 +21,7 @@ import CountryDetail from "./projects/countries/CountryDetail"
 import MusicPlayer from "./projects/MusicPlayer"
 import WhatsApp from "./Contacts/WhatsApp"
 import Instagram from "./Contacts/Instagram"
+import Telegram from "./Contacts/Telegram"
 import './index.css'
 import './App.css'
 
@@ -105,6 +106,10 @@ const route  = createBrowserRouter([
             {
                 path:"/instagram",
                 element:<Instagram/>
+            },
+            {
+                path:"/telegram",
+                element : <Telegram/>
             }
         ]
     }
