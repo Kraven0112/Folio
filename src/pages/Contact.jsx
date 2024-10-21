@@ -11,10 +11,11 @@ export default function Contact() {
         isDark ? "bg-slate-950 text-white" : ""
       }`}
     >
+      
       <BackBtn/>
 
       <div className="sm:mt-5">
-        <h1 className="text-xl text-center  lg:text-6xl font-bold">
+        <h1 className={`text-xl text-center  lg:text-6xl font-bold ${isDark?"":"text-slate-800"}`}>
           Contacts
         </h1>
       </div>
